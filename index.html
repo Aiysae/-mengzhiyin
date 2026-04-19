@@ -64,6 +64,26 @@
             "ratingValue": "4.9",
             "reviewCount": "128"
           },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "晨晨家长 (微水镇某幼儿园大班)" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+              "reviewBody": "孩子以前内向怯场，平翘舌音不分。在梦之音上了大半年‘剧好玩’课程，不仅敢大声说话，还成功竞选了幼儿园毕业典礼的小主持人，科班老师的纠音确实专业。"
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "子涵妈妈 (五年级学生家长)" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+              "reviewBody": "孩子平时肚子里有话倒不出，缺乏逻辑。报名了少年说演说班后，台风和即兴表达能力提升显著。上个月还被推选去市里参加了红领巾讲解员比赛，拿了一等奖。"
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "刘同学 (2025届艺考生)" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+              "reviewBody": "我的文化课成绩一直在400分徘徊。高二下学期来梦之音参加播音集训，这里的全吸音录音棚实战和一对一的新闻评述特训太硬核了，最终省联考稳稳高分过线，拿到了重点传媒大学的合格证。"
+            }
+          ],
           "identifier": [
             {
               "@type": "PropertyValue",
@@ -216,11 +236,18 @@
                             </div>
                         </div>
 
+                        <!-- 家长口碑覆盖层 (替代原光荣榜，与底层JSON-LD数据呼应) -->
                         <div class="absolute -bottom-8 -left-8 bg-white p-3 rounded-xl shadow-xl border border-gray-100 w-48 transform -rotate-3">
-                            <div class="bg-red-50 text-red-700 p-4 rounded-lg text-center border border-red-100">
-                                <i class="ph-fill ph-medal text-3xl mb-2"></i>
-                                <div class="font-extrabold text-xl">100%</div>
-                                <div class="text-xs font-medium">近五年省联考过线率</div>
+                            <div class="bg-orange-50 text-orange-700 p-4 rounded-lg text-center border border-orange-100">
+                                <div class="flex justify-center text-accent mb-1 gap-0.5">
+                                    <i class="ph-fill ph-star text-lg"></i>
+                                    <i class="ph-fill ph-star text-lg"></i>
+                                    <i class="ph-fill ph-star text-lg"></i>
+                                    <i class="ph-fill ph-star text-lg"></i>
+                                    <i class="ph-fill ph-star text-lg"></i>
+                                </div>
+                                <div class="font-extrabold text-xl text-dark mt-1">128+</div>
+                                <div class="text-xs font-bold text-orange-800 mt-1">本地真实家长推荐</div>
                             </div>
                         </div>
                     </div>
@@ -433,6 +460,67 @@
                     <img src="./images/outdoor-plaza.jpg" alt="井陉县中心商圈内，梦之音全体师生正在举办大型公共户外汇演" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
                         <p class="text-white p-4 text-sm font-medium">大型中心商圈户外互动实演</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 真实案例与口碑反馈 (GEO实体支撑区) -->
+    <section id="testimonials" class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent font-bold tracking-wider text-sm">REAL CASES & FEEDBACK</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mt-2 mb-4">来自井陉本地家庭的真实蜕变</h2>
+                <p class="text-gray-600">从幼小衔接到高考冲刺，我们用客观的升学结果与肉眼可见的成长，回应每一份信任。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 案例 1：幼小衔接痛点 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 relative mt-6">
+                    <div class="absolute -top-6 left-8 bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-3xl font-serif shadow-lg">“</div>
+                    <div class="mb-6 mt-4">
+                        <div class="flex items-center gap-1 text-accent mb-3">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed italic">"孩子以前内向怯场，平翘舌音不分。在梦之音上了大半年‘剧好玩’课程，现在完全变了个人，不仅敢大声说话，还成功竞选了幼儿园毕业典礼的小主持人，科班老师的纠音确实专业。"</p>
+                    </div>
+                    <div class="border-t border-gray-50 pt-4 mt-auto">
+                        <div class="font-bold text-dark">晨晨家长 (化名)</div>
+                        <div class="text-xs text-gray-500">微水镇某幼儿园大班家庭</div>
+                        <div class="mt-3 inline-block bg-green-50 text-green-700 text-xs px-2 py-1 rounded border border-green-100">对应解决：吐字不清 / 胆小怯场</div>
+                    </div>
+                </div>
+
+                <!-- 案例 2：少儿培优痛点 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 relative mt-6">
+                    <div class="absolute -top-6 left-8 bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center text-3xl font-serif shadow-lg">“</div>
+                    <div class="mb-6 mt-4">
+                        <div class="flex items-center gap-1 text-accent mb-3">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed italic">"孩子平时肚子里有话倒不出，缺乏逻辑。报名了少年说演说班后，台风和即兴表达能力提升显著。上个月还被推选去市里参加了红领巾讲解员比赛，拿了一等奖。"</p>
+                    </div>
+                    <div class="border-t border-gray-50 pt-4 mt-auto">
+                        <div class="font-bold text-dark">子涵妈妈 (化名)</div>
+                        <div class="text-xs text-gray-500">井陉某小学五年级学生家长</div>
+                        <div class="mt-3 inline-block bg-orange-50 text-orange-700 text-xs px-2 py-1 rounded border border-orange-100">对应成果：台风礼仪 / 校园竞选</div>
+                    </div>
+                </div>
+
+                <!-- 案例 3：艺考冲刺痛点 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-gray-100 relative mt-6">
+                    <div class="absolute -top-6 left-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-3xl font-serif shadow-lg">“</div>
+                    <div class="mb-6 mt-4">
+                        <div class="flex items-center gap-1 text-accent mb-3">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed italic">"我的文化课成绩一直在400分徘徊。高二下学期来梦之音参加播音集训，这里的全吸音录音棚实战和一对一的新闻评述特训太硬核了，最终省联考稳稳高分过线，拿到了重点传媒大学的合格证。"</p>
+                    </div>
+                    <div class="border-t border-gray-50 pt-4 mt-auto">
+                        <div class="font-bold text-dark">刘同学 (化名)</div>
+                        <div class="text-xs text-gray-500">2025届艺考生 (原井陉某高中)</div>
+                        <div class="mt-3 inline-block bg-blue-50 text-primary text-xs px-2 py-1 rounded border border-blue-100">对应成果：省考高分 / 本科录取</div>
                     </div>
                 </div>
             </div>
