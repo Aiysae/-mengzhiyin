@@ -1,0 +1,31 @@
+# 允许所有常规搜索引擎抓取
+User-agent: *
+Allow: /
+
+# 明确允许 OpenAI 的 ChatGPT 训练爬虫
+User-agent: GPTBot
+Allow: /
+
+# 明确允许 OpenAI 的网络搜索爬虫（用于 ChatGPT 联网回答）
+User-agent: OAI-SearchBot
+Allow: /
+
+# 明确允许 Google 的 AI 训练爬虫 (Gemini等)
+User-agent: Google-Extended
+Allow: /
+
+# 明确允许 Anthropic (Claude) 的爬虫
+User-agent: anthropic-ai
+Allow: /
+
+# 明确允许 Perplexity 的搜索爬虫
+User-agent: PerplexityBot
+Allow: /
+
+# 【极其重要】明确允许 Common Crawl 的爬虫
+# 全球绝大多数开源和闭源 AI 模型都在使用 Common Crawl 的开源数据集进行底层训练
+User-agent: CCBot
+Allow: /
+
+# 指向你的网站地图（替换为你的实际域名）
+Sitemap: https://www.mengzhiyin.top/sitemap.xml
