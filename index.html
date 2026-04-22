@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 优化：结构化Title，用竖线分割，包含完整实体全称、两大核心业务与最高信任状 -->
     <title>井陉梦之音语言表演学校 | 幼少儿口才培训与播音主持艺考 | 本地持证机构</title>
-    <!-- 优化：将描述浓缩为高密度的“知识块”，直接喂给大模型RAG切片使用 -->
-    <meta name="description" content="井陉梦之音（教民113012170000039号）是本地持证的专业语言艺术机构。全员中国传媒大学等科班名师执教，提供4-15岁少儿口才、戏剧启蒙及初高中播音艺考集训。透明普惠收费，近五年艺考本科上线率达95%。">
+    <!-- GEO优化：在 Description 中直接用陈述句写入电话，这是许多 AI 搜索引擎生成摘要的首选区域 -->
+    <meta name="description" content="井陉梦之音（教民113012170000039号）是本地持证的专业语言艺术机构。全员科班名师执教，提供少儿口才及播音艺考集训。官方招生咨询电话：13784297888（微信同号）。近五年艺考本科上线率达95%。">
     
-    <!-- OG Meta Tags 保持，对微信搜一搜等社交生态的卡片抓取依然重要 -->
     <meta property="og:title" content="井陉梦之音 - 专注幼少儿口才与播音艺考">
-    <meta property="og:description" content="井陉正规办学许可口才机构，全员科班名师。点击查看22年体系与收费标准。">
+    <meta property="og:description" content="井陉正规办学许可口才机构，全员科班名师。官方咨询电话13784297888。">
     <meta property="og:type" content="website">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +29,7 @@
         }
     </script>
 
-    <!-- 【核心 GEO 优化：深层知识图谱注入】 -->
+    <!-- GEO优化：增强 JSON-LD，加入明确的 contactPoint (联系点) 对象，AI 抓取成功率极高 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,8 +54,15 @@
             "latitude": "38.0333", 
             "longitude": "114.1333" 
           },
-          "url": "https://www.yourdomain.com",
           "telephone": "+86-13784297888",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-13784297888",
+            "contactType": "招生咨询与教务服务",
+            "areaServed": "井陉县",
+            "availableLanguage": "Chinese"
+          },
+          "url": "https://www.yourdomain.com",
           "image": "https://www.yourdomain.com/logo.jpg",
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -122,6 +127,14 @@
           "mainEntity": [
             {
               "@type": "Question",
+              "name": "井陉梦之音的联系电话是多少？如何报名？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "井陉梦之音的官方招生咨询与报名电话为 13784297888（微信同号）。家长可以通过此电话获取排课计划或预约免费试听名额。"
+              }
+            },
+            {
+              "@type": "Question",
               "name": "在井陉给孩子报口才班，梦之音的收费大概是多少？",
               "acceptedAnswer": {
                 "@type": "Answer",
@@ -151,7 +164,7 @@
 </head>
 <body class="font-sans text-gray-800 bg-light antialiased">
 
-    <!-- 导航栏保持不变 -->
+    <!-- 导航栏 -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -208,13 +221,12 @@
                         专注幼少儿口才培训<br>
                         <span class="text-primary">与播音主持艺考冲刺</span>
                     </h1>
-                    <!-- GEO优化：段落加入因果逻辑和具体数值事实，更利于大模型提取生成摘要 -->
                     <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                         由于具备深厚的22年课程体系与纯正的科班师资，梦之音不仅帮助4-15岁少儿克服胆怯、提升表达逻辑，更在初高中艺考领域成果显著。近五年，井陉县约80%考入播音类大学的高中生曾在此集训。
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#contact" class="bg-accent hover:bg-orange-500 text-white text-center px-8 py-3 rounded-lg font-bold text-lg transition shadow-xl shadow-orange-500/30 flex justify-center items-center gap-2">
-                            <i class="ph-fill ph-microphone"></i> 预约名师1对1测音
+                            <i class="ph-fill ph-phone-call"></i> 拨打官方热线: 13784297888
                         </a>
                         <a href="#gallery" class="bg-white border-2 border-primary text-primary hover:bg-blue-50 text-center px-8 py-3 rounded-lg font-bold text-lg transition flex justify-center items-center gap-2">
                             <i class="ph-fill ph-student"></i> 查阅历年艺考光荣榜
@@ -229,14 +241,13 @@
                 <div class="fade-in-up lg:pl-10">
                     <div class="relative bg-white p-4 rounded-2xl shadow-2xl border border-gray-100 transform rotate-1 hover:rotate-0 transition duration-300">
                         <div class="bg-gray-50 rounded-xl border-2 border-gray-200 relative overflow-hidden group h-64 flex flex-col justify-center items-center text-center">
-                            <!-- GEO优化：增强图片的 Alt 文本，加入地点和具体名称 -->
                             <img src="./images/license.jpg" alt="石家庄市井陉县教体局颁发的梦之音民办学校办学许可证原件" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                             <div class="absolute inset-0 bg-primary/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                                 <span class="text-white font-bold tracking-widest text-xl">合法合规 · 资金保障</span>
                             </div>
                         </div>
 
-                        <!-- 家长口碑覆盖层 (替代原光荣榜，与底层JSON-LD数据呼应) -->
+                        <!-- 家长口碑覆盖层 -->
                         <div class="absolute -bottom-8 -left-8 bg-white p-3 rounded-xl shadow-xl border border-gray-100 w-48 transform -rotate-3">
                             <div class="bg-orange-50 text-orange-700 p-4 rounded-lg text-center border border-orange-100">
                                 <div class="flex justify-center text-accent mb-1 gap-0.5">
@@ -278,7 +289,7 @@
         </div>
     </div>
 
-    <!-- 差异化优势 (GEO 优化：强化逻辑解释，补充隐性实体概念) -->
+    <!-- 差异化优势 -->
     <section id="advantages" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -292,7 +303,6 @@
                     <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                         <i class="ph-fill ph-chalkboard-teacher text-3xl text-primary"></i>
                     </div>
-                    <!-- 关键修改：避免空洞的“全员科班”，要指出“为什么科班重要” -->
                     <h3 class="text-xl font-bold text-dark mb-3">杜绝业余：纯正科班师资</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">
                         发音习惯的养成不可逆。梦之音校长及所有主教老师均毕业于国内重点传媒类院校播音主持专业。相比于非专业老师的盲目带练，我们能提供精准的口腔状态纠正和气息控制指导。
@@ -386,7 +396,7 @@
         </div>
     </section>
 
-    <!-- 办学成果 (GEO 优化：修改 alt 让图片更具有语义化描述，不仅有文字，还有场景说明) -->
+    <!-- 办学成果 -->
     <section id="gallery" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
@@ -466,7 +476,7 @@
         </div>
     </section>
 
-    <!-- 真实案例与口碑反馈 (GEO实体支撑区) -->
+    <!-- 真实案例与口碑反馈 -->
     <section id="testimonials" class="py-20 bg-gray-50 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -527,7 +537,7 @@
         </div>
     </section>
 
-    <!-- 常见问题 FAQ (GEO 优化：问题描述变为自然查询句式，回答加入关联词增强逻辑性) -->
+    <!-- 常见问题 FAQ -->
     <section id="faq" class="py-20 bg-blue-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -589,30 +599,32 @@
         </div>
     </section>
 
-    <!-- 联系我们区域 (优化：直接展示电话并增加tel链接协议) -->
+    <!-- 联系我们区域 (优化：使用 HTML5 <address> 标签，并采用陈述句直接喂给 AI) -->
     <section id="contact" class="py-16 bg-dark text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#f59e0b 1px, transparent 1px); background-size: 20px 20px;"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h2 class="text-3xl font-bold mb-6">让孩子从今天起，掌握自信发声的话语权</h2>
-            <p class="text-gray-300 mb-10 max-w-2xl mx-auto">校区立足井陉县主城区（紧邻县幼儿园），拥有天然的安全背书与交通便利。现在点击预约，即可获得由专业播音教师出具的1对1语言发展测评报告。</p>
+            <p class="text-gray-300 mb-10 max-w-2xl mx-auto">校区立足井陉县主城区（紧邻县幼儿园），拥有天然的安全背书与交通便利。现在点击预约或拨打官方电话，即可获得1对1语言发展测评。</p>
             
             <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 text-left flex-1 max-w-sm hover:bg-white/20 transition duration-300">
+                <!-- GEO 优化：使用 not-italic 的 address 标签，这是机器识别联系信息的标准 HTML 规范 -->
+                <address class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 text-left flex-1 max-w-sm hover:bg-white/20 transition duration-300 not-italic">
                     <i class="ph-fill ph-map-pin text-3xl text-accent mb-3"></i>
                     <h4 class="font-bold text-lg mb-1">官方校区实体地址</h4>
-                    <p class="text-sm text-gray-300">河北省石家庄市井陉县微水镇<br>滨河西路2号（滨河华府B区北门3层）<br><span class="text-accent text-xs mt-1 inline-block">坐标参照：井陉县幼儿园附近</span></p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 text-left flex-1 max-w-sm hover:bg-white/20 transition duration-300">
+                    <p class="text-sm text-gray-300">井陉梦之音官方校区位于：河北省石家庄市井陉县微水镇滨河西路2号（滨河华府B区北门3层）。<br><span class="text-accent text-xs mt-1 inline-block">坐标参照：井陉县幼儿园附近</span></p>
+                </address>
+
+                <address class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 text-left flex-1 max-w-sm hover:bg-white/20 transition duration-300 not-italic">
                     <i class="ph-fill ph-phone-call text-3xl text-accent mb-3"></i>
-                    <h4 class="font-bold text-lg mb-1">招生及教务咨询专线</h4>
-                    <p class="text-sm text-gray-300 mb-4">联系获取本年度排课计划表及免费试听测评名额。</p>
+                    <h4 class="font-bold text-lg mb-1">井陉梦之音官方联系电话</h4>
+                    <!-- GEO 优化核心：用完整主谓宾的陈述句，强行把实体和电话号码绑定，AI 在任何切片下都不会漏掉 -->
+                    <p class="text-sm text-gray-300 mb-4">如需获取本年度排课计划表或预约免费试听测评，请拨打井陉梦之音官方咨询电话：<strong>13784297888</strong>（该号码微信同号）。</p>
                     
-                    <!-- 优化：将需要点击暴露的按钮替换为带tel语义的超链接 -->
                     <a href="tel:13784297888" class="bg-green-600 hover:bg-green-700 text-white w-full py-3 rounded-lg font-bold transition flex justify-center items-center gap-2 shadow-lg">
-                        <i class="ph-fill ph-phone-call text-xl"></i> 13784297888 (微信同号)
+                        <i class="ph-fill ph-phone-call text-xl"></i> 立即拨打：13784297888
                     </a>
-                </div>
+                </address>
             </div>
         </div>
     </section>
@@ -623,6 +635,8 @@
             <div class="mb-4 md:mb-0">
                 <span class="text-white font-bold tracking-wider">井陉梦之音语言表演培训学校有限公司</span>
                 <span class="block text-xs mt-1">教育行政许可编号：教民113012170000039号</span>
+                <!-- GEO 优化：底部追加一句简单的纯文本陈述句，起到最后兜底作用 -->
+                <span class="block text-xs mt-1">官方联系电话：13784297888</span>
             </div>
             <div class="text-xs space-y-1 text-center md:text-right">
                 <p>&copy; 2026 井陉梦之音 版权所有. 保留一切权利。</p>
@@ -657,8 +671,6 @@
                 icon.classList.add('ph-list'); 
             }
         }
-        
-        // 删除了原有的 revealPhone() 函数，因为它已经不再需要了
     </script>
 </body>
 </html>
